@@ -121,7 +121,6 @@ const content = {
     clear: "مسح البيانات",
     dashboardEyebrow: "خطة الرعاية الخاصة بك",
     dashboardTitle: "خطواتك القادمة بوضوح",
-    mockOutput: "نتيجة ذكاء اصطناعي تجريبية",
     summaryTitle: "شرح مبسط",
     checklistTitle: "قائمة الإجراءات",
     questionsTitle: "أسئلة لمقدم الرعاية الصحية",
@@ -387,7 +386,6 @@ function App() {
               <p className="eyebrow">{t.dashboardEyebrow}</p>
               <h2>{t.dashboardTitle}</h2>
             </div>
-            <span className="mock-label">{t.mockOutput}</span>
           </div>
 
           <article className="summary-card">
