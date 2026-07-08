@@ -27,7 +27,6 @@ const content = {
     clear: "Clear data",
     dashboardEyebrow: "Your care plan",
     dashboardTitle: "Clear next steps",
-    mockOutput: "Mock AI output",
     summaryTitle: "Simple explanation",
     checklistTitle: "Action checklist",
     questionsTitle: "Questions for your provider",
