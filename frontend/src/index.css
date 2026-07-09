@@ -624,11 +624,6 @@ h3 {
 }
 
 
-
-.app-shell[dir="rtl"] .app-footer {
-  text-align: center;
-}
-
 /* Arabic section headings alignment */
 .app-shell[dir="rtl"] .section-title,
 .app-shell[dir="rtl"] .section-heading,
@@ -646,4 +641,39 @@ h3 {
   display: flex;
   justify-content: flex-end;
   text-align: right;
+}
+
+/* Fix Arabic section headings */
+.app-shell[dir="rtl"] .section-heading,
+.app-shell[dir="rtl"] .dashboard-heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.app-shell[dir="rtl"] .section-heading > div,
+.app-shell[dir="rtl"] .dashboard-heading > div {
+    width: 100%;
+    text-align: right;
+}
+
+.app-shell[dir="rtl"] .section-heading h2,
+.app-shell[dir="rtl"] .dashboard-heading h2,
+.app-shell[dir="rtl"] .section-heading .eyebrow,
+.app-shell[dir="rtl"] .dashboard-heading .eyebrow {
+    text-align: right !important;
+}
+
+.app-shell[dir="rtl"] .privacy-ai-section > div {
+    text-align: right;
+}
+
+.app-shell[dir="rtl"] .privacy-ai-section h2,
+.app-shell[dir="rtl"] .privacy-ai-section .eyebrow {
+    text-align: right !important;
+}
+
+.app-shell[dir="rtl"] .app-footer {
+  text-align: center;
 }
