@@ -623,73 +623,7 @@ h3 {
   text-align: right;
 }
 
-/* ===========================
-   Full Arabic RTL Override
-   =========================== */
 
-.app-shell[dir="rtl"] {
-  direction: rtl;
-  text-align: right;
-}
-
-/* All text elements */
-.app-shell[dir="rtl"] h1,
-.app-shell[dir="rtl"] h2,
-.app-shell[dir="rtl"] h3,
-.app-shell[dir="rtl"] p,
-.app-shell[dir="rtl"] span,
-.app-shell[dir="rtl"] label,
-.app-shell[dir="rtl"] small {
-  text-align: right;
-}
-
-/* Header */
-.app-shell[dir="rtl"] .topbar {
-  flex-direction: row-reverse;
-}
-
-/* Hero section */
-.app-shell[dir="rtl"] .hero {
-  direction: rtl;
-}
-
-/* Section headings */
-.app-shell[dir="rtl"] .section-heading,
-.app-shell[dir="rtl"] .dashboard-heading {
-  text-align: right;
-}
-
-/* Buttons */
-.app-shell[dir="rtl"] .action-row {
-  flex-direction: row-reverse;
-}
-
-/* Text inputs */
-.app-shell[dir="rtl"] textarea,
-.app-shell[dir="rtl"] input {
-  direction: rtl;
-  text-align: right;
-}
-
-/* Demo cards */
-.app-shell[dir="rtl"] .demo-grid,
-.app-shell[dir="rtl"] .dashboard-grid,
-.app-shell[dir="rtl"] .visit-prep-grid,
-.app-shell[dir="rtl"] .steps-grid {
-  direction: rtl;
-}
-
-/* Checklist */
-.app-shell[dir="rtl"] .checklist-item {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-
-/* Privacy list */
-.app-shell[dir="rtl"] .privacy-ai-list li {
-  direction: rtl;
-  text-align: right;
-}
 
 .app-shell[dir="rtl"] .app-footer {
   text-align: center;
