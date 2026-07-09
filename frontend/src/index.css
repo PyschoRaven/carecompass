@@ -564,3 +564,61 @@ h3 {
   height: 16px;
   flex: 0 0 auto;
 }
+
+/* Full Arabic / RTL layout */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .app,
+[dir="rtl"] main,
+[dir="rtl"] section,
+[dir="rtl"] .hero,
+[dir="rtl"] .input-section,
+[dir="rtl"] .dashboard,
+[dir="rtl"] .visit-prep-section,
+[dir="rtl"] .how-it-works-section,
+[dir="rtl"] .privacy-ai-section,
+[dir="rtl"] .app-footer {
+  text-align: right;
+}
+
+/* Keep text areas and inputs aligned correctly */
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Headings and normal text */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] p,
+[dir="rtl"] label,
+[dir="rtl"] span,
+[dir="rtl"] small {
+  text-align: right;
+}
+
+/* Cards and section headings */
+[dir="rtl"] .section-heading,
+[dir="rtl"] .hero-content,
+[dir="rtl"] .input-header,
+[dir="rtl"] .dashboard-header {
+  text-align: right;
+}
+
+/* Keep buttons readable and positioned naturally */
+[dir="rtl"] button {
+  direction: rtl;
+}
+
+/* Arabic form labels */
+[dir="rtl"] .prep-field,
+[dir="rtl"] .form-group,
+[dir="rtl"] .consent-row {
+  text-align: right;
+}
