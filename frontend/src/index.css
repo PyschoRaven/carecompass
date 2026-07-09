@@ -623,6 +623,20 @@ h3 {
   text-align: right;
 }
 
+
+
 .app-shell[dir="rtl"] .app-footer {
-  text-align: right;
+  text-align: center;
+}
+
+/* Arabic section headings alignment */
+.app-shell[dir="rtl"] .section-title,
+.app-shell[dir="rtl"] .section-heading,
+.app-shell[dir="rtl"] .dashboard-title,
+.app-shell[dir="rtl"] .section-header h2,
+.app-shell[dir="rtl"] h2,
+.app-shell[dir="rtl"] h3 {
+  text-align: right !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
