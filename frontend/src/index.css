@@ -623,6 +623,9 @@ h3 {
   text-align: right;
 }
 
+.app-shell[dir="rtl"] .app-footer {
+  text-align: center;
+}
 
 /* Arabic section headings alignment */
 .app-shell[dir="rtl"] .section-title,
@@ -674,6 +677,16 @@ h3 {
     text-align: right !important;
 }
 
+/* Keep footer centered in both languages */
+.app-footer {
+  text-align: center !important;
+}
+
 .app-shell[dir="rtl"] .app-footer {
-  text-align: center;
+  text-align: center !important;
+  direction: rtl;
+}
+
+.app-shell[dir="rtl"] .app-footer * {
+  text-align: center !important;
 }
