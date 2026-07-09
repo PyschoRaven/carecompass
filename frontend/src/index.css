@@ -640,3 +640,10 @@ h3 {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
+.app-shell[dir="rtl"] .section-header,
+.app-shell[dir="rtl"] .section-heading-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
