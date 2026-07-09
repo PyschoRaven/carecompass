@@ -480,7 +480,7 @@ function App() {
         </section>
 
         <section className="how-it-works-section">
-          <div className="section-heading">
+          <div className="section-heading" style="text-align:right">
             <div>
               <p className="eyebrow">{t.howItWorksEyebrow}</p>
               <h2>{t.howItWorksTitle}</h2>
