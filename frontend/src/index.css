@@ -623,8 +623,6 @@ h3 {
   text-align: right;
 }
 
-
-
 .app-shell[dir="rtl"] .app-footer {
-  text-align: center;
+  text-align: right;
 }
