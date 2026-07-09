@@ -565,68 +565,6 @@ h3 {
   flex: 0 0 auto;
 }
 
-/* Full Arabic / RTL layout */
-[dir="rtl"] {
-  direction: rtl;
-  text-align: right;
-}
-
-[dir="rtl"] .app,
-[dir="rtl"] main,
-[dir="rtl"] section,
-[dir="rtl"] .hero,
-[dir="rtl"] .input-section,
-[dir="rtl"] .dashboard,
-[dir="rtl"] .visit-prep-section,
-[dir="rtl"] .how-it-works-section,
-[dir="rtl"] .privacy-ai-section,
-[dir="rtl"] .app-footer {
-  text-align: right;
-}
-
-/* Keep text areas and inputs aligned correctly */
-[dir="rtl"] input,
-[dir="rtl"] textarea,
-[dir="rtl"] select {
-  direction: rtl;
-  text-align: right;
-}
-
-/* Headings and normal text */
-[dir="rtl"] h1,
-[dir="rtl"] h2,
-[dir="rtl"] h3,
-[dir="rtl"] p,
-[dir="rtl"] label,
-[dir="rtl"] span,
-[dir="rtl"] small {
-  text-align: right;
-}
-
-/* Cards and section headings */
-[dir="rtl"] .section-heading,
-[dir="rtl"] .hero-content,
-[dir="rtl"] .input-header,
-[dir="rtl"] .dashboard-header {
-  text-align: right;
-}
-
-/* Keep buttons readable and positioned naturally */
-[dir="rtl"] button {
-  direction: rtl;
-}
-
-/* Arabic form labels */
-[dir="rtl"] .prep-field,
-[dir="rtl"] .form-group,
-[dir="rtl"] .consent-row {
-  text-align: right;
-}
-
-.app-shell[dir="rtl"] .app-footer {
-  text-align: center;
-}
-
 /* Arabic section headings alignment */
 .app-shell[dir="rtl"] .section-title,
 .app-shell[dir="rtl"] .section-heading,
@@ -689,4 +627,265 @@ h3 {
 
 .app-shell[dir="rtl"] .app-footer * {
   text-align: center !important;
+}
+
+/* Arabic adjustments */
+.app-shell[dir="rtl"] .safety-note {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Keep the checkmark on the left side */
+.app-shell[dir="rtl"] .safety-note {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.app-shell[dir="rtl"] .safety-note span:first-child {
+  order: 2;
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+/* Buttons text aligned right in Arabic */
+.app-shell[dir="rtl"] button {
+  direction: rtl;
+  text-align: right;
+  justify-content: flex-start;
+}
+
+/* ==================== RTL STYLES ==================== */
+
+[dir="rtl"] {
+  text-align: right;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+[dir="rtl"] .checklist-item,
+[dir="rtl"] .consent-row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .question-list {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+[dir="rtl"] .topbar,
+[dir="rtl"] .hero,
+[dir="rtl"] .section-heading,
+[dir="rtl"] .dashboard-heading {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .action-row {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .hero {
+  justify-content: flex-end !important;
+  gap: 40px !important;
+}
+
+[dir="rtl"] .hero-badge {
+  order: -1 !important;
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+[dir="rtl"] .hero-badge span {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+[dir="rtl"] .hero > div:first-child h2,
+[dir="rtl"] .hero > div:first-child p {
+  text-align: right;
+}
+
+/* Full Arabic / RTL layout */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .app,
+[dir="rtl"] main,
+[dir="rtl"] section,
+[dir="rtl"] .hero,
+[dir="rtl"] .input-section,
+[dir="rtl"] .dashboard,
+[dir="rtl"] .visit-prep-section,
+[dir="rtl"] .how-it-works-section,
+[dir="rtl"] .privacy-ai-section,
+[dir="rtl"] .app-footer {
+  text-align: right;
+}
+
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] p,
+[dir="rtl"] label,
+[dir="rtl"] span,
+[dir="rtl"] small {
+  text-align: right;
+}
+
+[dir="rtl"] button {
+  direction: rtl;
+}
+
+.app-shell[dir="rtl"] .app-footer {
+  text-align: center;
+}
+
+/* Arabic adjustments */
+.app-shell[dir="rtl"] .safety-note {
+  direction: rtl;
+  text-align: right;
+}
+
+.app-shell[dir="rtl"] .safety-note {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.app-shell[dir="rtl"] .safety-note span:first-child {
+  order: 2;
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+.app-shell[dir="rtl"] button {
+  direction: rtl;
+  text-align: right;
+  justify-content: flex-start;
+}
+
+
+/* Swap Title and Language Button in Arabic */
+[dir="rtl"] .topbar {
+  flex-direction: row-reverse !important;
+  justify-content: flex-start !important;
+}
+
+[dir="rtl"] .topbar > div:first-child {
+  order: 2;           /* Move title to the right */
+}
+
+[dir="rtl"] .topbar .language-button {
+  order: 1;           /* Move EN button to the left */
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .checklist-item {
+  flex-direction: row;
+  text-align: right;
+}
+
+[dir="rtl"] .checklist-item input {
+  margin: 0 0 0 10px;
+}
+
+[dir="rtl"] .checklist-item span {
+  flex: 1;
+}
+
+/* Arabic form labels */
+[dir="rtl"] .prep-field,
+[dir="rtl"] .form-group,
+[dir="rtl"] .consent-row {
+  text-align: right;
+}
+
+[dir="rtl"] .consent-row,
+[dir="rtl"] .checklist-item {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .action-row {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.consent-row {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.consent-row input {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
+/* Fix Privacy Card & Consent Row in Arabic */
+[dir="rtl"] .privacy-card .consent-row {
+  flex-direction: row-reverse !important;
+  justify-content: flex-start !important;
+}
+
+[dir="rtl"] .privacy-card .consent-row input {
+  margin-left: 12px !important;
+  margin-right: 0 !important;
+}
+
+[dir="rtl"] .privacy-card {
+  text-align: right !important;
+}
+
+[dir="rtl"] .privacy-card h3,
+[dir="rtl"] .privacy-card p {
+  text-align: right !important;
+}
+
+/* 3. Privacy Card & Consent Checkbox */
+[dir="rtl"] .privacy-card {
+  text-align: right !important;
+}
+
+[dir="rtl"] .privacy-card .consent-row {
+  flex-direction: row-reverse !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+}
+
+[dir="rtl"] .privacy-card .consent-row input {
+  margin: 0 0 0 12px !important;
+}
+
+/* General RTL Safety */
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] p {
+  text-align: right !important;
+}
+
+/* FORCE CHECKBOX TO RIGHT SIDE IN ARABIC */
+[dir="rtl"] .consent-row {
+  flex-direction: row-reverse !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+}
+
+[dir="rtl"] .consent-row input[type="checkbox"] {
+  margin-left: 12px !important;
+  margin-right: 0 !important;
+  order: 2 !important;
+}
+
+[dir="rtl"] .consent-row span {
+  order: 1 !important;
+  flex: 1;
+  text-align: right;
 }
