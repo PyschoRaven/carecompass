@@ -17,7 +17,7 @@ const content = {
     consent:
       "I understand that CareCompass is not a medical diagnosis or treatment service.",
     demoEyebrow: "Safe demo mode",
-    demoTitle: "Choose a fictional demo scenario to explore CareCompass. Do not enter personal health information.",
+    demoTitle: "Choose a fictional case",
     demoLoad: "Load example instructions",
     inputEyebrow: "Appointment information",
     inputTitle: "Create your care plan",
@@ -111,7 +111,7 @@ const content = {
     consent:
       "أفهم أن CareCompass ليس خدمة للتشخيص الطبي أو تقديم العلاج.",
     demoEyebrow: "وضع تجريبي آمن",
-    demoTitle: "اختر سيناريو تجريبيًا خياليًا لاستكشاف CareCompass. يُرجى عدم إدخال معلومات صحية شخصية.",
+    demoTitle: "اختر حالة تجريبية خيالية",
     demoLoad: "تحميل تعليمات تجريبية",
     inputEyebrow: "معلومات الموعد",
     inputTitle: "أنشئ خطة الرعاية الخاصة بك",
@@ -333,87 +333,23 @@ function App() {
 
       <section className="demo-section">
         <div className="section-heading">
-          <p className="eyebrow">
-            {isArabic ? "سيناريوهات تجريبية" : "Fictional demo scenarios"}
-          </p>
-
-          <h2>
-            {isArabic
-              ? "جرّب CareCompass باستخدام حالة آمنة"
-              : "Try CareCompass with a safe demo scenario"}
-          </h2>
-
-          <p className="demo-scenario-notice">
-            {t.demoScenarioNotice}
-          </p>
+          <div>
+            <p className="eyebrow">{t.demoEyebrow}</p>
+            <h2>{t.demoTitle}</h2>
+          </div>
         </div>
 
         <div className="demo-grid">
-          <button
-            type="button"
-            className="demo-card"
-            onClick={() => loadDemoCase("bloodPressure")}
-          >
-            <span className="demo-card-icon">♥</span>
-
-            <div>
-              <strong>
-                {isArabic
-                  ? "سيناريو تجريبي: متابعة ضغط الدم"
-                  : "Demo scenario: Blood Pressure Follow-Up"}
-              </strong>
-
-              <small>
-                {isArabic
-                  ? "تعليمات متابعة خيالية بعد زيارة العيادة"
-                  : "Fictional follow-up instructions after a clinic visit"}
-              </small>
-            </div>
-          </button>
-
-          <button
-            type="button"
-            className="demo-card"
-            onClick={() => loadDemoCase("diabetes")}
-          >
-            <span className="demo-card-icon">◈</span>
-
-            <div>
-              <strong>
-                {isArabic
-                  ? "سيناريو تجريبي: متابعة فحص السكري"
-                  : "Demo scenario: Diabetes Test Follow-Up"}
-              </strong>
-
-              <small>
-                {isArabic
-                  ? "تعليمات خيالية للتحضير للفحص والمتابعة"
-                  : "Fictional test-preparation and follow-up instructions"}
-              </small>
-            </div>
-          </button>
-
-          <button
-            type="button"
-            className="demo-card"
-            onClick={() => loadDemoCase("recovery")}
-          >
-            <span className="demo-card-icon">✦</span>
-
-            <div>
-              <strong>
-                {isArabic
-                  ? "سيناريو تجريبي: متابعة التعافي"
-                  : "Demo scenario: Recovery Follow-Up"}
-              </strong>
-
-              <small>
-                {isArabic
-                  ? "تعليمات خيالية لمتابعة التعافي بعد العلاج"
-                  : "Fictional recovery instructions after treatment"}
-              </small>
-            </div>
-          </button>
+          {t.demoCases.map((demoCase) => (
+            <button
+              key={demoCase.id}
+              className="demo-card"
+              onClick={() => loadDemoCase(demoCase)}
+            >
+              <strong>{demoCase.title}</strong>
+              <span>{t.demoLoad}</span>
+            </button>
+          ))}
         </div>
       </section>
 
