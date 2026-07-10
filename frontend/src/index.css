@@ -913,3 +913,23 @@ h3 {
 [dir="rtl"] .dashboard .checklist-item {
   flex-direction: row-reverse !important;
 }
+
+.demo-scenario-notice {
+  max-width: 720px;
+  margin: 10px 0 20px;
+  color: #6b624f;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+[dir="rtl"] .demo-scenario-notice {
+  text-align: right;
+}
+
+.demo-card {
+  text-align: left;
+}
+
+[dir="rtl"] .demo-card {
+  text-align: right;
+}
